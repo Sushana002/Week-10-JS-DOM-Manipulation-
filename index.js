@@ -1,5 +1,8 @@
 let id = 0; 
 
+// creating a new row by it's ID, add in an event listener and when it's clicked. 
+// Add in a table and grab it bt the ID in the html 
+// create a new row, and sets attributes to the rows. 
 document.getElementById('add').addEventListener('click', () => {
     let createdDate = new Date(); 
     let table = document.getElementById('list'); 

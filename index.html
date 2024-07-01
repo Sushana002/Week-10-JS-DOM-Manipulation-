@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 10: JS & Dom Manipulation </title>
+    <title>(Week 10: JS & Dom Manipulation) VACATION CALENDAR </title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
 <body>
+    <!-- Below I am creating a calendar usings classes "rows" and form group, and a table.-->
     <br>
+    <h1> The School Year Vacation Calendar</h1>
     <div class="card">
         <div class="card-body">
             <div class="row">
                 <div class="col-sm">
                     <div class="form-group">
-                        <label for="new-start-date">Start Date</label>
+                        <label for="new-start-date">Vacation Start Date</label> <!--This is where you can add the date you choose to start your vacation-->
                         <input type="date" class="form-control" id="new-start-date">
                     </div>
                 </div>
                 <div class="col-sm">
                     <div class="form-group">
-                        <label for="new-end-date">End Date</label>
+                        <label for="new-end-date">Vacation End Date</label> <!--When you'll return from vacation-->
                         <input type="date" class="form-control" id="new-end-date">
                     </div>
                 </div>
@@ -28,17 +31,17 @@
             <div class="row">
                 <div class="col-sm">
                     <div class="form-group">
-                        <label for="new-task">Task</label>
+                        <label for="new-task">Add Noted in Calendar</label> <!--Notes for your vacation-->
                         <input type="text" class="form-control" id="new-task" placeholder="Task">
                     </div>
                 </div>
             </div>
             <div>
-                <button id="add" class="btn btn-primary form-control" type="submit">Create</button>
+                <button id="add" class="btn btn-primary form-control" type="submit">CREATE</button>
             </div>
         </div>
     </div>
-
+  <!--Table for all key details for our up coming vacation-->
     <table id="list" class="table table-dark table-stripe">
         <tr>
             <th>Task</th>
@@ -49,7 +52,6 @@
         </tr>
 
     </table>
-
 
 <script src="index.js"></script>
 <script src="node_modules/jquery/dist/jquery.js"></script>
